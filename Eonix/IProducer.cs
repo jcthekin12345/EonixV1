@@ -1,6 +1,6 @@
 namespace Eonix;
 
-public interface Producer 
+public interface IProducer 
 {
     string Name { get; set; }
     string Description { get; set; }
