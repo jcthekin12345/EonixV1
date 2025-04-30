@@ -8,5 +8,6 @@ public interface IProducer
     double BaseCost { get; set; }
     double BaseProduction { get; set; }
     
+    double GetCurrentProduction();
     void Produce();
 }
