@@ -1,3 +1,5 @@
+using Eonix.Core.Systems.Interfaces;
+
 namespace Eonix;
 
 public class Game

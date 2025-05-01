@@ -8,10 +8,9 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Core\Systems\generators\" />
+      <Folder Include="Core\Systems\Models\" />
       <Folder Include="Data\" />
       <Folder Include="Examples\" />
-      <Folder Include="Managers\" />
       <Folder Include="Modules\" />
       <Folder Include="Plugins\" />
       <Folder Include="Testing\" />
