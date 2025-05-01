@@ -25,5 +25,14 @@ public class Producer(
     // Cost increases exponentially with level
     // Additional useful methods
     public double GetUpgradeCost() => BaseCost * Math.Pow(1.8, Level);
-    
+
+    public void Upgrade()
+    {
+        Level++;
+    }
+
+    public override string ToString()
+    {
+        return $"{Name} (Level {Level}) - Production: {GetCurrentProduction():F2}/cycle";
+    }
 }
