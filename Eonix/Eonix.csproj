@@ -9,7 +9,6 @@
 
     <ItemGroup>
       <Folder Include="Core\Systems\Models\" />
-      <Folder Include="Core\Systems\Producers\" />
       <Folder Include="Data\" />
       <Folder Include="Examples\" />
       <Folder Include="Modules\" />
