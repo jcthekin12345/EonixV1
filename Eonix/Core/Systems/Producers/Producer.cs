@@ -19,5 +19,8 @@ public class Producer(
     
     // Formula: BaseProduction * (LevelMultiplier * Level) * (1 + EfficiencyFactor * Level)
     // This creates exponential growth as levels increase
-    public double GetCurrentProduction() => throw new NotImplementedException();
+    public double GetCurrentProduction() =>
+        BaseProduction * (LevelMultiplier * Level) * (1 + EfficiencyFactor * Level);
+    
+    
 }
