@@ -4,7 +4,6 @@ public interface IProducer
 {
     string Name { get; set; }
     string Description { get; set; }
-    string Type { get; set; } 
     double BaseCost { get; set; }
     double BaseProduction { get; set; }
     

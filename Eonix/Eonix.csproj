@@ -7,4 +7,14 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <Folder Include="Core\Systems\generators\" />
+      <Folder Include="Data\" />
+      <Folder Include="Examples\" />
+      <Folder Include="Managers\" />
+      <Folder Include="Modules\" />
+      <Folder Include="Plugins\" />
+      <Folder Include="Testing\" />
+    </ItemGroup>
+
 </Project>
