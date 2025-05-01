@@ -22,5 +22,8 @@ public class Producer(
     public double GetCurrentProduction() =>
         BaseProduction * (LevelMultiplier * Level) * (1 + EfficiencyFactor * Level);
     
+    // Cost increases exponentially with level
+    // Additional useful methods
+    public double GetUpgradeCost() => BaseCost * Math.Pow(1.8, Level);
     
 }
