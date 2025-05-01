@@ -8,7 +8,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Core\Systems\generators\" />
+      <Folder Include="Core\Systems\Generators\" />
       <Folder Include="Data\" />
       <Folder Include="Examples\" />
       <Folder Include="Managers\" />
