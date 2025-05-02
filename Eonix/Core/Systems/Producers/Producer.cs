@@ -3,25 +3,35 @@ using Eonix.Core.Systems.Interfaces;
 namespace Eonix.Core.Systems.Producers;
 
 public class Producer(
-    string name, string description, double baseCost, double baseProduction) : IProducer
+    string name,
+    string description,
+    double baseCost,
+    double baseProduction) : IProducer, IComparable
 {
+
+    // Constants for production formula
+    const double LevelMultiplier = 1.5;
+    const double EfficiencyFactor = 0.1;
+
+    public int CompareTo(object? obj)
+    {
+        if (obj == null) return 1;
+
+        return BaseProduction.CompareTo(obj);
+    }
 
     public string Name { get; set; } = name;
     public string Description { get; set; } = description;
     public int Level { get; set; } = 1;
     public double BaseCost { get; set; } = baseCost;
     public double BaseProduction { get; set; } = baseProduction;
-    
-    // Constants for production formula
-    const double LevelMultiplier = 1.5;
-    const double EfficiencyFactor = 0.1;
-    
-    
+
+
     // Formula: BaseProduction * (LevelMultiplier * Level) * (1 + EfficiencyFactor * Level)
     // This creates exponential growth as levels increase
     public double GetCurrentProduction() =>
         BaseProduction * (LevelMultiplier * Level) * (1 + EfficiencyFactor * Level);
-    
+
     // Cost increases exponentially with level
     // Additional useful methods
     public double GetUpgradeCost() => BaseCost * Math.Pow(1.8, Level);
