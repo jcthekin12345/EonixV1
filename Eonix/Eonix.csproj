@@ -8,7 +8,10 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Core\Systems\Models\" />
+        <Folder Include="Core\Actions\"/>
+        <Folder Include="Core\Services\"/>
+        <Folder Include="Core\UI\"/>
+        <Folder Include="Core\Utils\"/>
       <Folder Include="Data\" />
       <Folder Include="Examples\" />
       <Folder Include="Modules\" />
