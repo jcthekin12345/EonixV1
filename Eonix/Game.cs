@@ -8,7 +8,6 @@ public class Game
     List<IProducer> _producers { get; set; } = new();
     public Game()
     {
-        _producers.Add(new AutoClicker());
     }
 
     public void Run()
